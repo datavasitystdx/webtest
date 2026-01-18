@@ -14,7 +14,10 @@ buttons.forEach(btn => {
     btn.classList.add('active');
     const filter = btn.dataset.filter;
     cards.forEach(card => {
-      card.style.display = filter === 'all' || card.dataset.category === filter ? 'block' : 'none';
+      card.style.display =
+        filter === 'all' || card.dataset.category === filter
+        ? 'block'
+        : 'none';
     });
   };
 });
